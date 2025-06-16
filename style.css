@@ -11,6 +11,7 @@
 
 body {
   display: flex;
+  min-height: 100dvh;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -19,6 +20,7 @@ body {
   font-family: "Space Mono", Arial, Helvetica, sans-serif;
   background-color: var(--Grey-200-body);
   font-weight: 700;
+  padding: 0;
 }
 
 header {
@@ -26,12 +28,14 @@ header {
 }
 
 main {
+  
   background-color: var(--White);
   display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 15px;
   width: 85dvw;
+
   padding: 2rem;
 }
 
