@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.svg" alt="" />
+    </header>
+    <main>
+      <form novalidate>
+        <div class="bill-div">
+          <label>Bill</label>
+          <span class="bill-error">Can't be zero</span>
+        </div>
+        <div class="input-wrapper">
+          <img class="input-icon" src="images/icon-dollar.svg" alt="" />
+          <input
+            class="bill"
+            dir="rtl"
+            type="number"
+            name=""
+            id="bill"
+            placeholder="0"
+          />
+        </div>
+        <label>Select Tip %</label>
+
+        <div class="tips">
+          <button value="0.05">
+            <span>5%</span>
+          </button>
+          <button value="0.1">
+            <span>10%</span>
+          </button>
+          <button value="0.15">
+            <span>15%</span>
+          </button>
+          <button value="0.25">
+            <span>25%</span>
+          </button>
+          <button value="0.5">
+            <span>50%</span>
+          </button>
+          <div class="custom-tip-wrapper">
+            <button class="custom-percent">
+              <span>Custom</span>
+            </button>
+            <input
+              type="number"
+              class="custom-input"
+              placeholder="Custom"
+              style="display: none"
+            />
+          </div>
+        </div>
+
+        <div class="number-div">
+          <label>Number of People</label>
+          <span class="number-error">Can't be zero</span>
+        </div>
+        <div class="input-wrapper">
+          <img class="input-icon" src="images/icon-person.svg" alt="" />
+          <input
+            type="number"
+            class="input-number"
+            dir="rtl"
+            name=""
+            id="number"
+            placeholder="0"
+          />
+        </div>
+      </form>
+      <div class="result">
+        <div class="amount">
+          <div class="labels">
+            <label>Tip Amount</label>
+            <span class="person">/person</span>
+          </div>
+          <span class="amount-value">$0.00</span>
+        </div>
+        <div class="total">
+          <div class="labels">
+            <label>Total</label>
+            <span class="person">/ person</span>
+          </div>
+          <span class="total-value">$0.00</span>
+        </div>
+        <span class="display-result"></span>
+        <button class="RESET">RESET</button>
+      </div>
+    </main>
+    <div class="attribution">Coded by <a href="#">Dhia Zorai</a>.</div>
+  </body>
+</html>
